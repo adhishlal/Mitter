@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="mitter.lal.adhish.mitter.activities.MessageActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:text="m"
+        android:textStyle="bold"
+        android:id="@+id/tvLogo"
+        android:layout_marginTop="20dp"
+        android:textSize="90sp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@color/white"
+        android:id="@+id/etMessage"
+        android:hint="@string/write_message"
+        android:background="@drawable/background_edittext"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:id="@+id/tvSend"
+        android:textColor="@color/darkred"
+        android:text="@string/send_message"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background_button"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/value"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:id="@+id/tvValueLabel"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/background_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:id="@+id/tvValue"
+        android:layout_height="100dp" />
+
+</LinearLayout>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/progress"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
